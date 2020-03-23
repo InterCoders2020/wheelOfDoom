@@ -6,6 +6,7 @@ $result= $connect->query($query);
 
 while($row=$result->fetch_assoc()){
 
+echo $row['name'];
 return $row['id'];
 
 header("Location: http://localhost/phpfactoriaf5/wheelOfDoom/index.php"); die();
