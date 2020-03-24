@@ -6,7 +6,6 @@ body {
 
 nav {
   background-color: #ececec;
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -15,7 +14,14 @@ nav {
   display: inline-block;
   padding-bottom: 10px;
 }
-
+ a{
+  width: 120px;
+  position: absolute;
+  display: inline-block;
+  top: 50px;
+  left: 44%;
+  text-decoration:none;
+ }
 .logo {
   background-image: url(logo.png);
   width: 90px;
@@ -105,13 +111,13 @@ h3 {
 .button.kill {
   position: absolute;
   margin-left: 19%;
-  margin-top: 29%;
+  margin-top: 28%;
 }
 
 .button.add {
   position: absolute;
-  margin-left: 54%;
-  margin-top: 29%;
+  margin-left: 55%;
+  margin-top: 28%;
 }
 
 a {
@@ -122,26 +128,30 @@ a {
 .text-box {
   background: #cccccc;
   color: maroon;
-  height: 25px;
-  width: 11.5%;
 }
 
 .text-box.die-name {
   position: absolute;
-  margin-top: 29.7%;
-  margin-left: 33%;
+  margin-top: 28.7%;
+  margin-left: 32%;
+  height: 25px;
+  width: 11.5%;
 }
 
 .text-box.add-name {
   position: absolute;
-  margin-top: 29.7%;
+  margin-top: 28.7%;
   margin-left: 68%;
+  height: 25px;
+  width: 11.5%;
 }
 
 .text-box.status-name {
   position: absolute;
   margin-top: 29.7%;
   margin-left: 80%;
+  height: 25px;
+  width: 11.5%;
 }
 
 .deadAliveNumber {
@@ -155,6 +165,7 @@ a {
 
 .number {
   background-color: #cccccc;
+  font-size: 15px;
 }
 
 .list.dead {
@@ -175,7 +186,7 @@ p {
 }
 
 footer {
-  background-color: #cccccc;
+  background-color: #cccccc41;
   position: fixed;
   right: 0;
   bottom: 0;
