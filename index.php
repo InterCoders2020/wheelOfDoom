@@ -26,18 +26,12 @@
     </div>
 
    <section>
-      <form action="connections\mysqlRandom.php">
+      <form>
         <label for="dieNameButton">
           <input class="button kill" type="submit" name="dieNameButton" value="KILL A CODER">
         </label>
         <label for="dieName">
-          <table class="text-box die-name" type="text" id=dieName required name="Name">
-          <tr>
-             <td>
-             <?php include('connections\mysqlRandom.php')?>
-              </td>
-              </tr>
-          </table>
+          <input class="text-box die-name" type="text" id=dieName required name="name" value="<?php include('connections\update.php')?>">
         </label>
       </form>
     </section>
@@ -48,16 +42,11 @@
           <input class="button add" type="submit" name="addNameButton" value="ADD A CODER">
         </label>
         <label for="addName">
-          <input class="text-box add-name" type="text" id=addName required name="Name" placeholder="Name">
-          <select class="text-box status-name" id=addName required name="Status">
-            <option value="Alive" selected>Alive</option>
-            <option value="Dead">Dead</option>
-          </select>
+          <input class="text-box add-name" type="text" id=addName required name="name" placeholder="Name">
         </label>
       </form>
     </section>
  
-
     <section class="deadAliveNumber">
       <label for="deadNumber">Dead</label>
         <input class="number" type="text" id=deadNumber required name="" value="<?php include('connections\counterDead.php')?>">

@@ -2,12 +2,13 @@
 include("connect.php");
 
     $name= $_POST['name'];
-    $status= $_POST['status'];
 
-    $query= "INSERT INTO coders_list(name,status) VALUES('$name','$status')";
+    $query= "INSERT INTO coders_list(name,status) VALUES('$name','Alive')";
     $result= $connect->query($query);
 
-    header("Location: http://localhost/phpfactoriaf5/wheelOfDoom/index.php"); die();
+    echo '<tr><td>' . $result['name'] . '</td></tr>' ;
+
+    header("Location: http://localhost/docs/proyectos/wheelOfDoom/index.php"); die();
 
     $connect->close();
 ?>
