@@ -6,3 +6,4 @@ $sql = "SELECT COUNT(*) total FROM coders_list WHERE status='Alive'";
 $result = $connection->query($sql);
 $fila = $result->fetch_assoc();
 echo $fila['total'];
+

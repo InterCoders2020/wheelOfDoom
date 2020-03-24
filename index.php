@@ -26,43 +26,31 @@
     </div>
 
    <section>
-      <form action="connections\mysqlRandom.php">
+      <form>
         <label for="dieNameButton">
           <input class="button kill" type="submit" name="dieNameButton" value="KILL A CODER">
         </label>
         <label for="dieName">
-          <table class="text-box die-name" type="text" id=dieName required name="Name">
-          <tr>
-             <td>
-            
-              </td>
-              </tr>
-          </table>
+          <input class="text-box die-name" type="text" id=dieName required name="name" value="">
         </label>
       </form>
     </section>
     
     <section>
-       <form action="connections\save_coder.php" method="post"> 
+       <form action="connections/save_coder.php" method="post"> 
           <input class="button add" type="submit" name="addNameButton" value="ADD A CODER">
-
           <input class="text-box add-name" type="text" id=addName required name="name" placeholder="Name">
-            <select class="text-box status-name" id=addName required name="status">
-              <option value="Alive" selected>Alive</option>
-              <option value="Dead">Dead</option>
-            </select>
-
       </form>
     </section>
  
-    <!--
     <section class="deadAliveNumber">
       <label for="deadNumber">Dead</label>
-      <input class="number" type="text" id=deadNumber required name="" value="">
+        <input class="number" type="text" id=deadNumber required name="" value="<?php include('connections\counterDead.php')?>">
+      
       <label for="aliveNumber">Alive</label>
-      <input class="number" type="text" id=aliveNumber required name="" value="">
+        <input class="number" type="text" id=aliveNumber required name="" value="<?php include('connections\counterAlive.php')?>"> 
     </section>
-    -->
+
     <section class="list alive">
       <table>
         <tr>

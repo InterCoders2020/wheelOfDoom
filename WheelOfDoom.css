@@ -110,7 +110,7 @@ h3 {
 
 .button.add {
   position: absolute;
-  margin-left: 54%;
+  margin-left: 55%;
   margin-top: 29%;
 }
 
@@ -127,7 +127,7 @@ a {
 .text-box.die-name {
   position: absolute;
   margin-top: 29.7%;
-  margin-left: 33%;
+  margin-left: 32%;
   height: 25px;
   width: 11.5%;
 }
@@ -136,6 +136,14 @@ a {
   position: absolute;
   margin-top: 29.7%;
   margin-left: 68%;
+  height: 25px;
+  width: 11.5%;
+}
+
+.text-box.status-name {
+  position: absolute;
+  margin-top: 29.7%;
+  margin-left: 80%;
   height: 25px;
   width: 11.5%;
 }
@@ -151,6 +159,7 @@ a {
 
 .number {
   background-color: #cccccc;
+  font-size: 15px;
 }
 
 .list.dead {
