@@ -8,7 +8,7 @@ include ("connect.php");
 
     echo '<tr><td>' . $result['name'] . '</td></tr>' ;
 
-    header("Location: http://localhost/docs/proyectos/wheelOfDoom/index.php"); die();
+    header("Location: http://localhost/PHPFactoriaF5/wheelOfDoom/index.php"); die();
 
     $connect->close();
 ?>
