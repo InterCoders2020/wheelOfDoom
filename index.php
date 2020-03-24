@@ -57,14 +57,15 @@
       </form>
     </section>
  
-    <!--
+
     <section class="deadAliveNumber">
       <label for="deadNumber">Dead</label>
-      <input class="number" type="text" id=deadNumber required name="" value="">
+        <input class="number" type="text" id=deadNumber required name="" value="<?php include('connections\counterDead.php')?>">
+      
       <label for="aliveNumber">Alive</label>
-      <input class="number" type="text" id=aliveNumber required name="" value="">
+        <input class="number" type="text" id=aliveNumber required name="" value="<?php include('connections\counterAlive.php')?>"> 
     </section>
-    -->
+
     <section class="list alive">
       <table>
         <tr>
