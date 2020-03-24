@@ -31,19 +31,15 @@
           <input class="button kill" type="submit" name="dieNameButton" value="KILL A CODER">
         </label>
         <label for="dieName">
-          <input class="text-box die-name" type="text" id=dieName required name="name" value="<?php include('connections\update.php')?>">
+          <input class="text-box die-name" type="text" id=dieName required name="name" value="">
         </label>
       </form>
     </section>
     
     <section>
        <form action="connections/save_coder.php" method="post"> 
-        <label for="addNameButton"> 
           <input class="button add" type="submit" name="addNameButton" value="ADD A CODER">
-        </label>
-        <label for="addName">
           <input class="text-box add-name" type="text" id=addName required name="name" placeholder="Name">
-        </label>
       </form>
     </section>
  
