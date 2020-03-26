@@ -6,3 +6,4 @@ $connection = new mysqli("127.0.0.1", "root", "", "coders");
     $fila = $result->fetch_assoc();
 
     echo $fila['total'];
+

@@ -7,3 +7,4 @@ $connection = new mysqli("127.0.0.1", "root", "", "coders");
     header("Location: http://localhost/phpfactoriaf5/wheelOfDoom/index.php"); die();
     $connect->close();
 ?>
+
