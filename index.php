@@ -5,37 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wheel of doom</title>
     <link rel="stylesheet" type="text/css" href="WheelOfDoom.css" />
-  </head>
-
+  </head> 
   <body>
-       <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
-    
+      <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">  
+      <a href="http://localhost/phpfactoriaf5/wheelOfDoom/connections/reset.php">Reset Status</a> 
     <header>
       <img src="images/skull.png" alt="Skull">
       <h1>Wheel of Doom</h1>
-    </header>
-    
+    </header> 
     <nav>
       <img class="logo" src="Images/logo.png" alt="InterCodersIcon" />
-    </nav>
-  
+    </nav>    
     <div>
       <hr id="line-1">
-        <h3>Who is gonna be the next one?</h3> 
+        <h3>Who is gonna be the next one?</h3>
       <hr id="line-2">
-    </div>
-
-   <section>
+    </div>   
+    <section>
       <form>
         <label for="dieNameButton">
-          <input class="button kill" type="submit" name="dieNameButton" value="KILL A CODER">
+          <input class="button kill" type="submit" name="dieNameButton" value=" KILL A CODER &nbsp;&nbsp; <?php include('connections\update.php')?>">
         </label>
         <label for="dieName">
-          <input class="text-box die-name" type="text" id=dieName required name="name" value="">
+          <input class="text-box die-name" type="text" id=dieName name="name" value="<?php echo $row['name']; ?>" />
         </label>
       </form>
-    </section>
-    
+    </section>    
     <section>
        <form action="connections/save_coder.php" method="post"> 
           <input class="button add" type="submit" name="addNameButton" value="ADD A CODER">
@@ -60,8 +55,7 @@
           </td>
         </tr>
      </table>
-    </section>
-
+    </section>    
     <section class="list dead">
       <table>
         <tr>
@@ -72,10 +66,10 @@
         </tr>
      </table>
     </section>
-  <!--
+
     <footer>
       <a class="repository" href="https://github.com/InterCoders2020"> Our repository </a>
     </footer>
--->
+
   </body>
 </html>
